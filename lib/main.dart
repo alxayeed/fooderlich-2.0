@@ -21,6 +21,7 @@ class _FooderlichState extends State<Fooderlich> {
   Widget build(BuildContext context) {
     // TODO: Apply Home widget
     // 3
+    bool lightTheme = theme == FooderlichTheme.light();
     return MaterialApp(
       // TODO: Add theme
       title: 'Fooderlich',
@@ -39,12 +40,12 @@ class _FooderlichState extends State<Fooderlich> {
           TextButton(
               onPressed: () {
                 setState(() {
-                  theme = theme == FooderlichTheme.light()
+                  theme = lightTheme
                       ? FooderlichTheme.dark()
                       : FooderlichTheme.light();
                 });
               },
-              child: Text("Change theme"))
+              child: Text(lightTheme ? "Dark Mode" : "Light Mode"))
         ])),
       ),
     );
