@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooderlich/card1.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -11,8 +12,7 @@ class _HomeState extends State<Home> {
   int _selectedIndex = 0;
 
   static List<Widget> pages = [
-    //TODO: Replace with Card1
-    Container(color: Colors.green),
+    Card1(),
     //TODO: Replace with Card2
     Container(color: Colors.blue),
     //TODO: Replace with Card3
@@ -28,14 +28,12 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // TODO: Style the title
       appBar: AppBar(
           centerTitle: true,
           title: Text(
             'Fooderlich',
             style: Theme.of(context).textTheme.headline6,
           )),
-      // TODO: Show selected tab
       body: pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
