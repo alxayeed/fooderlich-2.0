@@ -1,16 +1,75 @@
-# fooderlich
+# Fooderlich
 
-A new Flutter project.
+### Unleash your spicy imagination!
 
-## Getting Started
+## Showcase
 
-This project is a starting point for a Flutter application.
+<table>
+  <tr>
+    <td>Recipe</td>
+    <td>Author</td>
+    <td>Explore</td>
+  </tr>
+  <tr>
+    <td><img src="ss/card1.png" width="100%" height="70%" /></td>
+    <td><img src="ss/card2.png" width="100%" height="70%" /></td>
+    <td><img src="ss/card3.png" width="100%" height="70%" /></td>
+  </tr>
+ </table>
+<br/>
 
-A few resources to get you started if this is your first Flutter project:
+## Stacks
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Dart
+- Flutter
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+## Keypoints
+- point 1
+- point 2
+- point 3
+
+
+## Widgets
+
+- [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
+- [AssetImage]()
+- [BottomNavigationBar]()
+- [BottomNavigationBarItem]()
+- [BoxDecoration]()
+- [Center]()
+- [CircleAvatar]()
+- [Chip]()
+- [Column]()
+- [DecorationImage]()
+- [Expanded](https://api.flutter.dev/flutter/widgets/Expanded-class.html)
+- [Icon]()
+- [IconButton]()
+- [Image](https://api.flutter.dev/flutter/widgets/Image-class.html)
+- [MaterialApp](https://api.flutter.dev/flutter/material/Material-class.html)
+- [Padding](https://api.flutter.dev/flutter/widgets/Padding-class.html)
+- [Positioned]()
+- [RotatedBox]()
+- [Row]()
+- [Scaffold](https://api.flutter.dev/flutter/material/Scaffold-class.html)
+- [SizedBox]()
+- [SnackBar]()
+- [Stack]()
+- [Text](https://api.flutter.dev/flutter/widgets/Text-class.html)
+- [TextTheme]()
+- [ThemeData]()
+- [Wrap]()
+<br/>
+
+## Q&A
+What's on your mind?
+```
+Nothing for now
+```
+
+## Docs and References
+- [Flutter docs](https://api.flutter.dev/)
+- [Material library](https://api.flutter.dev/flutter/material/material-library.html)
+- [Widgets library](https://api.flutter.dev/flutter/widgets/widgets-library.html)
+
