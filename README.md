@@ -23,7 +23,13 @@
 - Dart
 - Flutter
 
-<br/>
+
+
+## Keypoints
+- point 1
+- point 2
+- point 3
+
 
 ## Widgets
 
@@ -56,7 +62,14 @@
 - [Wrap]()
 <br/>
 
+## Q&A
+What's on your mind?
+```
+Nothing for now
+```
+
 ## Docs and References
 - [Flutter docs](https://api.flutter.dev/)
 - [Material library](https://api.flutter.dev/flutter/material/material-library.html)
 - [Widgets library](https://api.flutter.dev/flutter/widgets/widgets-library.html)
+
