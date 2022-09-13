@@ -6,22 +6,14 @@ void main() {
   runApp(const Fooderlich());
 }
 
-class Fooderlich extends StatefulWidget {
+class Fooderlich extends StatelessWidget {
   // 2
   const Fooderlich({Key? key}) : super(key: key);
-
-  @override
-  State<Fooderlich> createState() => _FooderlichState();
-}
-
-class _FooderlichState extends State<Fooderlich> {
-  ThemeData theme = FooderlichTheme.light();
-
   @override
   Widget build(BuildContext context) {
+    final theme = FooderlichTheme.light();
     // TODO: Apply Home widget
     // 3
-    bool lightTheme = theme == FooderlichTheme.light();
     return MaterialApp(
       // TODO: Add theme
       title: 'Fooderlich',
@@ -32,21 +24,10 @@ class _FooderlichState extends State<Fooderlich> {
         appBar: AppBar(title: const Text('Fooderlich')),
         // TODO: Style the body text
         body: Center(
-            child: Column(children: [
-          Text(
-            'Let\'s get cooking 👩‍🍳',
-            style: theme.textTheme.bodyText1,
-          ),
-          TextButton(
-              onPressed: () {
-                setState(() {
-                  theme = lightTheme
-                      ? FooderlichTheme.dark()
-                      : FooderlichTheme.light();
-                });
-              },
-              child: Text(lightTheme ? "Dark Mode" : "Light Mode"))
-        ])),
+            child: Text(
+          'Let\'s get cooking 👩‍🍳',
+          style: theme.textTheme.bodyText1,
+        )),
       ),
     );
   }
