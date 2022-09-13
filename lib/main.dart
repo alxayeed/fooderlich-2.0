@@ -21,7 +21,12 @@ class Fooderlich extends StatelessWidget {
       // 4
       home: Scaffold(
         // TODO: Style the title
-        appBar: AppBar(title: const Text('Fooderlich')),
+        appBar: AppBar(
+            centerTitle: true,
+            title: Text(
+              'Fooderlich',
+              style: theme.textTheme.headline6,
+            )),
         // TODO: Style the body text
         body: Center(
             child: Text(
