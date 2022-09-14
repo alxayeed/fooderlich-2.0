@@ -34,7 +34,7 @@
 ## Widgets
 
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
-- [AssetImage]()
+- [AssetImage](https://api.flutter.dev/flutter/painting/AssetImage-class.html)
 - [BottomNavigationBar]()
 - [BottomNavigationBarItem]()
 - [BoxDecoration]()
