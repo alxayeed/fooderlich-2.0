@@ -86,7 +86,8 @@ StatefulWidgets state of the widget needs to be managed.
 
 ```
 
-## Docs and References
+# Docs and References
+### Chapter 3 - Basic widgets
 - [Material design system](https://material.io)
 - [Material UI Components](https://flutter.dev/docs/development/ui/widgets/material)
 - [Cupertino UI Components](https://flutter.dev/docs/development/ui/widgets/cupertino)
@@ -96,7 +97,7 @@ widgets](https://flutter.dev/docs/development/ui/widgets/material)
 - [Chip widget](https://medium.com/aubergine-solutions/1c46217dca9b)
 - [Widget UI component library](https://gallery.flutter.dev/)
 
-<br>
+### Chapter 4 - Understanding widgets
 
 - [Widget library](https://api.flutter.dev/flutter/widgets/widgets-library.html)
 - [Devtools overview](https://flutter.dev/docs/development/tools/devtools/overview)
