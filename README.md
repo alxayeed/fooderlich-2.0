@@ -26,6 +26,7 @@
 
 
 ## Keypoints
+### Chapter 3
 - Three main categories of widgets are: structure and navigation; displaying
 information; and, positioning widgets
 - Two main visual design systems available in Flutter, Material and
@@ -37,6 +38,15 @@ you a single source of truth for app’s style
 - The Scaffold widget implements all basic visual layout structure needs
 - The Container widget can be used to group other widgets together
 - The Container widget can be used to group other widgets together
+### Chapter 4
+- Flutter maintains three trees in parallel: the Widget, Element and RenderObject
+trees.
+- A Flutter app only updates the widgets that needs redrawing.
+- The Flutter Inspector is a useful tool to debug, experiment with and inspect a
+widget tree.
+- always start by creating StatelessWidgets, only use
+StatefulWidgets state of the widget needs to be managed.
+- Inherited widgets are a good solution to access state from the top of the tree.
 
 
 ## Widgets
@@ -86,3 +96,10 @@ widgets](https://flutter.dev/docs/development/ui/widgets/material)
 - [Chip widget](https://medium.com/aubergine-solutions/1c46217dca9b)
 - [Widget UI component library](https://gallery.flutter.dev/)
 
+<br>
+
+- [Widget library](https://api.flutter.dev/flutter/widgets/widgets-library.html)
+- [Devtools overview](https://flutter.dev/docs/development/tools/devtools/overview)
+- [Detailed architectural overview of Flutter and widgets](https://flutter.dev/docs/resources/architectural-overview)
+- [Widgets under the hood (Youtube series)](https://www.youtube.com/playlist?list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2)
+- [Talk on how to render widgets](https://youtu.be/996ZgFRENMs)
