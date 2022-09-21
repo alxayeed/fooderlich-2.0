@@ -20,28 +20,47 @@ class GroceryListScreen extends StatelessWidget {
         itemBuilder: (context, index) {
           final item = groceryItems[index];
           //TODO: Wrap in Dismissable and InkWell
-          return InkWell(
-            child: GroceryTile(
-                key: Key(item.id),
-                groceryItem: item,
-                onComplete: (change) {
-                  if (change != null) {
-                    groceryManager.completeItem(index, change);
-                  }
-                }),
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => GroceryItemScreen(
-                            originalItem: item,
-                            onCreate: (item) {},
-                            onUpdate: (item) {
-                              groceryManager.updateItem(item, index);
-                              Navigator.pop(context);
-                            },
-                          )));
+          return Dismissible(
+            key: Key(item.id),
+            direction: DismissDirection.startToEnd,
+            background: Container(
+              color: Colors.red,
+              alignment: Alignment.centerLeft,
+              child: const Icon(
+                Icons.delete_forever,
+                color: Colors.white,
+                size: 50.0,
+              ),
+            ),
+            onDismissed: (direction) {
+              groceryManager.deleteItem(index);
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                content: Text('${item.name} deleted'),
+              ));
             },
+            child: InkWell(
+              child: GroceryTile(
+                  key: Key(item.id),
+                  groceryItem: item,
+                  onComplete: (change) {
+                    if (change != null) {
+                      groceryManager.completeItem(index, change);
+                    }
+                  }),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => GroceryItemScreen(
+                              originalItem: item,
+                              onCreate: (item) {},
+                              onUpdate: (item) {
+                                groceryManager.updateItem(item, index);
+                                Navigator.pop(context);
+                              },
+                            )));
+              },
+            ),
           );
         },
         separatorBuilder: (context, index) {
