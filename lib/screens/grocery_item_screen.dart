@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
+import 'package:fooderlich/components/grocery_tile.dart';
 import 'package:fooderlich/models/models.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -88,7 +89,15 @@ class _GroceryItemScreenState extends State<GroceryItemScreen> {
             buildColorField(),
             const SizedBox(height: 10.0),
             buildQuantityField(),
-            //TODO 19: Add grocery tile
+            GroceryTile(
+                groceryItem: GroceryItem(
+                    id: 'previewMode',
+                    color: _currentColor,
+                    name: _name,
+                    date: DateTime(_dueDate.year, _dueDate.month, _dueDate.day,
+                        _timeOfDay.hour, _timeOfDay.minute),
+                    importance: _importance,
+                    quantity: _currentSliderValue))
           ],
         ),
       ),
