@@ -106,7 +106,7 @@ callbacks to react to events like onTap or onDrag.
 - [ThemeData](https://api.flutter.dev/flutter/material/ThemeData-class.html)
 - [Wrap](https://api.flutter.dev/flutter/widgets/Wrap-class.html)
 
-### Chapter 5
+### Chapter 5 - Scrollable Widgets
 - [AsyncSnapshot](https://api.flutter.dev/flutter/widgets/AsyncSnapshot-class.html)
 - [CircularProgressIndicator](https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html)
 - [ClipRRect](https://api.flutter.dev/flutter/widgets/ClipRRect-class.html)
@@ -179,7 +179,7 @@ widgets](https://flutter.dev/docs/development/ui/widgets/material)
 - [Slivers(Video)](https://www.youtube.com/watch?v=mSc7qFzxHDw)
 - [ScrollController](https://api.flutter.dev/flutter/widgets/ScrollController-class.html)
 
-### Chapter 5 - Scrollable widgets
+### Chapter 6 - Scrollable widgets
 - [BlockPicker](https://pub.dev/documentation/flutter_colorpicker/latest/flutter_colorpicker/BlockPicker-class.html)
 - [Buttons](https://flutter.dev/docs/development/ui/widgets/material#Buttons)
 - [ChangeNotifierProvider](https://pub.dev/documentation/provider/latest/provider/ChangeNotifierProvider-class.html)
