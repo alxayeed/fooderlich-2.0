@@ -62,8 +62,22 @@ behavior.
 - Barrel files are handy to group imports together. They also let you import many
 widgets using a single file.
 
+### Chapter 6 - Interactive widgets
+- We can pass data around with callbacks or provider packages.
+- If we need to pass data one level up, we use callbacks.
+- If we need to pass data deep in the widget tree, we use providers.
+- Provider is a state management helper that acts as a wrapper around inherited
+widgets.
+- Provider helps expose state model objects to widgets below it.
+- Consumer listens for changes to values and rebuilds the widgets below itself.
+- Split widgets by screen to keep code modular and organized.
+- Create manager objects to manage functions and state changes in one place.
+- Gesture widgets recognize and determine the type of touch event. They provide
+callbacks to react to events like onTap or onDrag.
+- We can use dismissible widgets to swipe away items in a list.
 
-## Widgets
+
+## Widgets & Classes
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
 - [AssetImage](https://api.flutter.dev/flutter/painting/AssetImage-class.html)
 - [BottomNavigationBar](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
@@ -103,11 +117,37 @@ widgets using a single file.
 - [SliverGridDelegateWithFixedCrossAxisCount](https://api.flutter.dev/flutter/rendering/SliverGridDelegate-class.html)
 <br/>
 
+### Chapter 6 - Interactive widgets
+- [AlertDialog](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
+- [AspectRatio](https://api.flutter.dev/flutter/widgets/AspectRatio-class.html)
+- [ChoiceChip](https://api.flutter.dev/flutter/material/ChoiceChip-class.html)
+- [DateTime](https://api.flutter.dev/flutter/dart-core/DateTime-class.html)
+- [Dismissible](https://api.flutter.dev/flutter/widgets/Dismissible-class.html)
+- [Flexible](https://api.flutter.dev/flutter/widgets/Flexible-class.html)
+- [IndexedStack](https://api.flutter.dev/flutter/widgets/IndexedStack-class.html)
+- [InkWell](https://api.flutter.dev/flutter/material/InkWell-class.html)
+- [InputDecoration](https://api.flutter.dev/flutter/material/InputDecoration-class.html)
+- [MaterialButton](https://api.flutter.dev/flutter/material/MaterialButton-class.html)
+- [ScaffoldMessenger](https://api.flutter.dev/flutter/material/ScaffoldMessenger-class.html)
+- [showDialog](https://api.flutter.dev/flutter/material/showDialog.html)
+- [showDatePicker](https://api.flutter.dev/flutter/material/showDatePicker.html)
+- [showTimePicker](https://api.flutter.dev/flutter/material/showTimePicker.html)
+- [Slider](https://api.flutter.dev/flutter/material/Slider-class.html)
+- [TextDecoration](https://api.flutter.dev/flutter/dart-ui/TextDecoration-class.html)
+- [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)
+- [TimeOfDay](https://api.flutter.dev/flutter/material/TimeOfDay-class.html)
+
+
 ## Q&A
 
 ```
 
 ```
+## Packages
+- [flutter_colorpicker](https://pub.dev/packages/flutter_colorpicker)
+- [intl](https://pub.dev/packages/intl)
+- [provider](https://pub.dev/packages/provider)
+- [uuid](https://pub.dev/packages/uuid)
 
 # Docs and References
 ### Chapter 3 - Basic widgets
@@ -138,3 +178,16 @@ widgets](https://flutter.dev/docs/development/ui/widgets/material)
 - [Slivers](https://www.raywenderlich.com/19539821-slivers-in-flutter-getting-started)
 - [Slivers(Video)](https://www.youtube.com/watch?v=mSc7qFzxHDw)
 - [ScrollController](https://api.flutter.dev/flutter/widgets/ScrollController-class.html)
+
+### Chapter 5 - Scrollable widgets
+- [BlockPicker](https://pub.dev/documentation/flutter_colorpicker/latest/flutter_colorpicker/BlockPicker-class.html)
+- [Buttons](https://flutter.dev/docs/development/ui/widgets/material#Buttons)
+- [ChangeNotifierProvider](https://pub.dev/documentation/provider/latest/provider/ChangeNotifierProvider-class.html)
+- [Chip types](https://material.io/components/chips/flutter#types)
+- [DateFormat](https://api.flutter.dev/flutter/intl/DateFormat-class.html)
+- [Enum](https://www.educative.io/blog/dart-2-language-features)
+- [Gestures](https://flutter.dev/docs/development/ui/advanced/gestures)
+- [How wrap works!(Video)](https://youtu.be/z5iw2SeFx2M)
+- [MultiProvider](https://pub.dev/documentation/provider/latest/provider/MultiProvider-class.html)
+- [Text fields](https://flutter.dev/docs/cookbook/forms/text-field-changes)
+
