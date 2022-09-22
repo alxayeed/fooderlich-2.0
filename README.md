@@ -6,14 +6,14 @@
 
 <table>
   <tr>
-    <td>Recipe</td>
-    <td>Author</td>
-    <td>Explore</td>
+    <td>To buy</td>
+    <td>Add grocery items</td>
+    <td>Grocery list</td>
   </tr>
   <tr>
-    <td><img src="ss/explore_screen.png" width="100%" height="70%" /></td>
-    <td><img src="ss/recipe_screen3.png" width="100%" height="70%" /></td>
-    <td><img src="ss/recipe_screen2.png" width="100%" height="70%" /></td>
+    <td><img src="ss/img.png" width="100%" height="70%" /></td>
+    <td><img src="ss/add_grocery.png" width="100%" height="70%" /></td>
+    <td><img src="ss/grocery_list.png" width="100%" height="70%" /></td>
   </tr>
  </table>
 <br/>
