@@ -23,10 +23,10 @@ class AppRouter extends RouterDelegate
 
   @override
   void dispose() {
-    super.dispose();
     appStateManager.removeListener(notifyListeners);
     profileManager.removeListener(notifyListeners);
     groceryManager.removeListener(notifyListeners);
+    super.dispose();
   }
 
   @override
@@ -35,7 +35,8 @@ class AppRouter extends RouterDelegate
       key: navigatorKey,
       onPopPage: _handlePopPage,
       pages: [
-        // TODO: Add SplashScreen
+        if (!appStateManager.isInitialized) SplashScreen.page(),
+        SplashScreen.page(),
         // TODO: Add LoginScreen
         // TODO: Add OnBoardingScreen
         // TODO: Add Home
