@@ -17,7 +17,7 @@ class AppStateManager extends ChangeNotifier {
   bool get isInitialized => _initialized;
   bool get isLoggedIn => _loggedIn;
   bool get isOnBoardingComplete => _onBoardingComplete;
-  int get selectedTab => _selectedTab;
+  int get getSelectedTab => _selectedTab;
 
   void initializeApp() {
     Timer(const Duration(milliseconds: 2000), () {

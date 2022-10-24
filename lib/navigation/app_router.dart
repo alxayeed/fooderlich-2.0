@@ -38,8 +38,10 @@ class AppRouter extends RouterDelegate
         if (!appStateManager.isInitialized) SplashScreen.page(),
         if (appStateManager.isInitialized && !appStateManager.isLoggedIn)
           LoginScreen.page(),
-        // TODO: Add OnBoardingScreen
-        // TODO: Add Home
+        if (appStateManager.isLoggedIn && !appStateManager.isOnBoardingComplete)
+          OnboardingScreen.page(),
+        if (appStateManager.isOnBoardingComplete)
+          Home.page(appStateManager.getSelectedTab),
         // TODO: create new item
         // TODO: Select GroceryItemScreen
         // TODO: Add ProfileScreen
