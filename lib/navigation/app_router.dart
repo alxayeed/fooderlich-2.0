@@ -55,13 +55,16 @@ class AppRouter extends RouterDelegate
               onCreate: (_) {},
               onUpdate: (item, index) {
                 groceryManager.updateItem(item, index);
-              })
-        // TODO: Add ProfileScreen
+              }),
+        if (profileManager.didSelectUser)
+          ProfileScreen.page(profileManager.getUser),
+
         // TODO: Add WebView Screen
       ],
     );
   }
 
+  // TODO: is this function only activated when back icon is clicked?
   bool _handlePopPage(Route<dynamic> route, result) {
     if (!route.didPop(result)) {
       return false;
@@ -74,7 +77,10 @@ class AppRouter extends RouterDelegate
     if (route.settings.name == FooderlichPages.groceryItemDetails) {
       groceryManager.groceryItemTapped(-1);
     }
-    // TODO: Handle state when user closes profile screen
+    // TODO: this is redundant, because back button is not present in the profile screen
+    if (route.settings.name == FooderlichPages.profilePath) {
+      profileManager.tapOnProfile(false);
+    }
     // TODO: Handle state when user closes WebView screen
 
     return true;

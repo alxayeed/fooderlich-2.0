@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:fooderlich/models/models.dart';
 import 'package:provider/provider.dart';
 
 import 'screens.dart';
-import 'package:fooderlich/models/models.dart';
 
 class Home extends StatefulWidget {
   static MaterialPage page(int currentTab) {
@@ -83,7 +83,8 @@ class _HomeState extends State<Home> {
           ),
         ),
         onTap: () {
-          // TODO: home -> profile
+          Provider.of<ProfileManager>(context, listen: false)
+              .tapOnProfile(true);
         },
       ),
     );
