@@ -56,9 +56,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
       children: [
         buildDarkModeRow(),
         ListTile(
-          title: const Text('View raywenderlich.com'),
+          title: const Text('View my Github profile'),
           onTap: () {
-            // TODO: Open raywenderlich.com webview
+            Provider.of<ProfileManager>(context, listen: false)
+                .tapOnRaywenderlich(true);
           },
         ),
         ListTile(
@@ -99,7 +100,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
         const SizedBox(height: 16.0),
         Text(
-          widget.user.firstName,
+          "${widget.user.firstName}  ${widget.user.lastName}",
           style: const TextStyle(
             fontSize: 21,
           ),
