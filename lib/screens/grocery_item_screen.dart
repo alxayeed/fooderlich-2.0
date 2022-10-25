@@ -24,6 +24,8 @@ class GroceryItemScreen extends StatefulWidget {
         name: FooderlichPages.groceryItemDetails,
         key: ValueKey(FooderlichPages.groceryItemDetails),
         child: GroceryItemScreen(
+          originalItem: item,
+          index: index,
           onCreate: onCreate,
           onUpdate: onUpdate,
         ));
