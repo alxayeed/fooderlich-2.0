@@ -1,5 +1,7 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../components/circle_image.dart';
 import '../models/models.dart';
@@ -56,17 +58,23 @@ class _ProfileScreenState extends State<ProfileScreen> {
       children: [
         buildDarkModeRow(),
         ListTile(
-          title: const Text('View my Github profile'),
-          onTap: () {
-            Provider.of<ProfileManager>(context, listen: false)
-                .tapOnRaywenderlich(true);
+          title: const Text('View my github'),
+          onTap: () async {
+            if (kIsWeb) {
+              await launch('https://github.com/alxayeed/');
+            } else {
+              Provider.of<ProfileManager>(context, listen: false)
+                  .tapOnRaywenderlich(true);
+            }
           },
         ),
         ListTile(
           title: const Text('Log out'),
           onTap: () {
+            // 1
             Provider.of<ProfileManager>(context, listen: false)
                 .tapOnProfile(false);
+            // 2
             Provider.of<AppStateManager>(context, listen: false).logout();
           },
         )
@@ -102,10 +110,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
         const SizedBox(height: 16.0),
         Text(
-          "${widget.user.firstName}  ${widget.user.lastName}",
-          style: const TextStyle(
-            fontSize: 21,
-          ),
+          "${widget.user.firstName} ${widget.user.lastName}",
+          style: const TextStyle(fontSize: 21),
         ),
         Text(widget.user.role),
         Text(
