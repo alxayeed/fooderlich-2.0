@@ -154,8 +154,7 @@ callbacks to react to events like onTap or onDrag.
 - [Material design system](https://material.io)
 - [Material UI Components](https://flutter.dev/docs/development/ui/widgets/material)
 - [Cupertino UI Components](https://flutter.dev/docs/development/ui/widgets/cupertino)
-- [Material Components
-widgets](https://flutter.dev/docs/development/ui/widgets/material)
+- [Material Components widgets](https://flutter.dev/docs/development/ui/widgets/material)
 - [Layout widgets](https://flutter.dev/docs/development/ui/widgets/layout)
 - [Chip widget](https://medium.com/aubergine-solutions/1c46217dca9b)
 - [Widget UI component library](https://gallery.flutter.dev/)

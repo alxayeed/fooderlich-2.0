@@ -63,7 +63,7 @@ class AppRouter extends RouterDelegate
     );
   }
 
-  // TODO: is this function only activated when back icon is clicked?
+  // This function only activated when the app back button or system back button is triggered
   bool _handlePopPage(Route<dynamic> route, result) {
     if (!route.didPop(result)) {
       return false;
