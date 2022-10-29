@@ -98,6 +98,16 @@ navigator’s list of pages.
 - Setting the router’s Back button dispatcher lets us listen to platform system
 events.
 
+### Chapter 8 - Deep Links and Web URLs
+- The app notifies RouteInformationProvider when there’s a new route.
+- The provider passes the route information to RouteInformationParser to parse
+the URL string.
+- The parser converts app state to and from a URL string.
+- AppLink models the navigation state. It is a user-defined data type that
+encapsulates information about a URL string.
+- In development mode, the Flutter web app does not persist data between app
+launches. The web app generated in release mode will work on the other browsers.
+
 
 ## Widgets & Classes
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
@@ -173,7 +183,9 @@ events.
 - [RootBackButtonDispatcher](https://api.flutter.dev/flutter/widgets/RootBackButtonDispatcher-class.html)
 - [ValueKey](https://api.flutter.dev/flutter/foundation/ValueKey-class.html)
 
-
+### Chapter 8 - Deep Links and Web URLs
+- [RouteInformationParser](https://api.flutter.dev/flutter/widgets/RouteInformationParser-class.html)
+- [RouteInformation](https://api.flutter.dev/flutter/widgets/RouteInformation-class.html)
 
 ## Q&A
 
@@ -187,6 +199,9 @@ events.
 - [uuid](https://pub.dev/packages/uuid)
 - [smooth_page_indicator]()
 - [webview_flutter](https://pub.dev/packages/webview_flutter)
+
+- [url_launcher](https://pub.dev/packages/url_launcher)
+- [shared_preferences](https://pub.dev/packages/shared_preferences)
 
 # Docs and References
 ### Chapter 3 - Basic widgets
@@ -234,6 +249,20 @@ events.
 - [Flutter Navigation: Getting Started by Filip Babić](https://www.raywenderlich.com/4562634-flutter-navigation-getting-started)
 - [Motivation behind Navigator 2.0 - the design document](https://bit.ly/3BcjjMU)
 - [Navigator 2.0 presentation by Chun-Heng Tai](https://youtu.be/xFFQKvcad3s?t=3158)
-- [Walks through intoa Navigator 2.0 example](https://www.youtube.com/watch?v=Y6kh5UonEZ0)
+- [Walks through into a Navigator 2.0 example](https://www.youtube.com/watch?v=Y6kh5UonEZ0)
 - [The differences between Navigator 1.0 and 2.0](https://youtu.be/JmfYeF4gUu0?t=9728)
+
+### Chapter 8 - Deep Links and Web URLs
+- [iOS Universal Links](https://www.raywenderlich.com/6080-universal-links-make-the-connection)
+- [Android App Links](https://www.raywenderlich.com/18330247-deep-links-in-android-getting-started)
+- [How to build and release an app](https://flutter.dev/docs/deployment/web#building-the-app-for-release)
+- [Url strategies eg- how to remove the trailing '#'](https://flutter.dev/docs/development/ui/navigation/url-strategies)
+- [Flutter folio - an example project](https://github.com/gskinnerTeam/flutter-folio)
+- [examples of two different types of web renderers here](https://flutter.dev/docs/development/tools/web-renderers)
+
+
+### Other Navigator 2.0 packages
+- https://pub.dev/packages/auto_route
+- https://pub.dev/packages/fluro
+- https://pub.dev/packages/beamer
 
