@@ -97,7 +97,30 @@ class AppRouter extends RouterDelegate<AppLink>
 
   // TODO: Apply configuration helper
 
-  // TODO: Replace setNewRoutePath
+  // maps specific url to specific screen
+  // converts url -> navigation state -> app state
   @override
-  Future<void> setNewRoutePath(configuration) async => null;
+  Future<void> setNewRoutePath(AppLink newLink) async {
+    switch (newLink.location) {
+      case AppLink.kProfilePath:
+        profileManager.tapOnProfile(true);
+        break;
+      case AppLink.kItemPath:
+        final itemId = newLink.itemId;
+        if (itemId != null) {
+          groceryManager.setSelectedGroceryItem(itemId);
+        } else {
+          groceryManager.createNewItem();
+        }
+        profileManager.tapOnProfile(false);
+        break;
+      case AppLink.kHomePath:
+        appStateManager.goToTab(newLink.currentTab ?? 0);
+        profileManager.tapOnProfile(false);
+        groceryManager.groceryItemTapped(-1);
+        break;
+      default:
+        break;
+    }
+  }
 }
