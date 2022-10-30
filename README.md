@@ -6,24 +6,14 @@
 
 <table>
   <tr>
-    <td>To buy</td>
-    <td>Add grocery items</td>
-    <td>Grocery list</td>
+    <td>search box</td>
+    <td>Search item</td>
+    <td>previous searches</td>
   </tr>
   <tr>
-    <td><img src="ss/empty_screen.png" width="100%" height="70%" /></td>
-    <td><img src="ss/add_grocery.png" width="100%" height="70%" /></td>
-    <td><img src="ss/grocery_list.png" width="100%" height="70%" /></td>
-  </tr>
-   <tr>
-    <td>Initialize</td>
-    <td>Login</td>
-    <td>Onboarding</td>
-  </tr>
-  <tr>
-    <td><img src="ss/initializing.png" width="100%" height="70%" /></td>
-    <td><img src="ss/img.png" width="100%" height="70%" /></td>
-    <td><img src="ss/onboarding.png" width="100%" height="70%" /></td>
+    <td><img src="ss/09_01.png" width="100%" height="70%" /></td>
+    <td><img src="ss/09_00.png" width="100%" height="70%" /></td>
+    <td><img src="ss/09_02.png" width="100%" height="70%" /></td>
   </tr>
  </table>
 <br/>
@@ -108,6 +98,18 @@ encapsulates information about a URL string.
 - In development mode, the Flutter web app does not persist data between app
 launches. The web app generated in release mode will work on the other browsers.
 
+### Chapter 9 - Shared Preference
+ - There are multiple ways to save data in an app: to files, in shared preferences and
+to a SQLite database.
+- Shared preferences are best used to store simple, key-value pairs of primitive types
+like strings, numbers and Booleans.
+- An example of when to use shared preferences is to save the tab a user is viewing,
+so the next time the user starts the app, they’re brought to the same tab.
+- The async/await keyword pair let us run asynchronous code off the main UI
+thread and then wait for the response. An example is getting an instance of
+SharedPreferences.
+- The shared_preferences plugin should not be used to hold sensitive data. Instead,
+consider using the flutter_secure_storage plugin.
 
 ## Widgets & Classes
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
@@ -199,9 +201,11 @@ launches. The web app generated in release mode will work on the other browsers.
 - [uuid](https://pub.dev/packages/uuid)
 - [smooth_page_indicator]()
 - [webview_flutter](https://pub.dev/packages/webview_flutter)
-
 - [url_launcher](https://pub.dev/packages/url_launcher)
 - [shared_preferences](https://pub.dev/packages/shared_preferences)
+- [cached_network_image](https://pub.dev/packages/cached_network_image)
+- [flutter_slidable](https://pub.dev/packages/flutter_slidable)
+- [flutter_svg](https://pub.dev/packages/flutter_svg)
 
 # Docs and References
 ### Chapter 3 - Basic widgets
@@ -260,6 +264,9 @@ launches. The web app generated in release mode will work on the other browsers.
 - [Flutter folio - an example project](https://github.com/gskinnerTeam/flutter-folio)
 - [examples of two different types of web renderers here](https://flutter.dev/docs/development/tools/web-renderers)
 
+### Chapter 9 - Shared Preference
+- [Android SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences?hl=en)
+- [iOS  UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults)
 
 ### Other Navigator 2.0 packages
 - https://pub.dev/packages/auto_route
