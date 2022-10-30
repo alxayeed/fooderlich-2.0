@@ -199,7 +199,6 @@ launches. The web app generated in release mode will work on the other browsers.
 - [uuid](https://pub.dev/packages/uuid)
 - [smooth_page_indicator]()
 - [webview_flutter](https://pub.dev/packages/webview_flutter)
-
 - [url_launcher](https://pub.dev/packages/url_launcher)
 - [shared_preferences](https://pub.dev/packages/shared_preferences)
 
