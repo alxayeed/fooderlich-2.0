@@ -201,6 +201,9 @@ launches. The web app generated in release mode will work on the other browsers.
 - [webview_flutter](https://pub.dev/packages/webview_flutter)
 - [url_launcher](https://pub.dev/packages/url_launcher)
 - [shared_preferences](https://pub.dev/packages/shared_preferences)
+- [cached_network_image](https://pub.dev/packages/cached_network_image)
+- [flutter_slidable](https://pub.dev/packages/flutter_slidable)
+- [flutter_svg](https://pub.dev/packages/flutter_svg)
 
 # Docs and References
 ### Chapter 3 - Basic widgets
