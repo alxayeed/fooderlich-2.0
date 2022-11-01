@@ -6,14 +6,10 @@
 
 <table>
   <tr>
-    <td>search box</td>
-    <td>Search item</td>
-    <td>previous searches</td>
+    <td>Recipe from model json</td>
   </tr>
   <tr>
-    <td><img src="ss/09_01.png" width="100%" height="70%" /></td>
-    <td><img src="ss/09_00.png" width="100%" height="70%" /></td>
-    <td><img src="ss/09_02.png" width="100%" height="70%" /></td>
+    <td><img src="ss/10_00.png" width="100%" height="70%" /></td>
   </tr>
  </table>
 <br/>
@@ -101,15 +97,25 @@ launches. The web app generated in release mode will work on the other browsers.
 ### Chapter 9 - Shared Preference
  - There are multiple ways to save data in an app: to files, in shared preferences and
 to a SQLite database.
-- Shared preferences are best used to store simple, key-value pairs of primitive types
+ - Shared preferences are best used to store simple, key-value pairs of primitive types
 like strings, numbers and Booleans.
-- An example of when to use shared preferences is to save the tab a user is viewing,
+ - An example of when to use shared preferences is to save the tab a user is viewing,
 so the next time the user starts the app, they’re brought to the same tab.
-- The async/await keyword pair let us run asynchronous code off the main UI
+ - The async/await keyword pair let us run asynchronous code off the main UI
 thread and then wait for the response. An example is getting an instance of
 SharedPreferences.
-- The shared_preferences plugin should not be used to hold sensitive data. Instead,
+ - The shared_preferences plugin should not be used to hold sensitive data. Instead,
 consider using the flutter_secure_storage plugin.
+
+### Chapter 10 - Serialization with JSON
+- JSON is an open-standard format used on the web and in mobile clients, especially
+with REST APIs.
+- In mobile apps, JSON code is usually parsed into the model objects that your app
+will work with.
+- You can write JSON parsing code yourself, but it’s usually easier to let a JSON
+package generate the parsing code for you.
+- json_annotation and json_serializable are packages that will let you generate
+the parsing code.
 
 ## Widgets & Classes
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
@@ -206,6 +212,9 @@ consider using the flutter_secure_storage plugin.
 - [cached_network_image](https://pub.dev/packages/cached_network_image)
 - [flutter_slidable](https://pub.dev/packages/flutter_slidable)
 - [flutter_svg](https://pub.dev/packages/flutter_svg)
+- [json_serializable](https://pub.dev/packages/json_serializable)
+- [json_annotation](https://pub.dev/packages/json_annotation)
+- [build_runner](https://pub.dev/packages/build_runner)
 
 # Docs and References
 ### Chapter 3 - Basic widgets
