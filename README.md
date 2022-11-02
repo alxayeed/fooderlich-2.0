@@ -117,6 +117,8 @@ package generate the parsing code for you.
 - json_annotation and json_serializable are packages that will let you generate
 the parsing code.
 
+### Chapter 11 - Networking in Flutter
+
 ## Widgets & Classes
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
 - [AssetImage](https://api.flutter.dev/flutter/painting/AssetImage-class.html)
@@ -215,6 +217,7 @@ the parsing code.
 - [json_serializable](https://pub.dev/packages/json_serializable)
 - [json_annotation](https://pub.dev/packages/json_annotation)
 - [build_runner](https://pub.dev/packages/build_runner)
+- [http](https://pub.dev/packages/http)
 
 # Docs and References
 ### Chapter 3 - Basic widgets
