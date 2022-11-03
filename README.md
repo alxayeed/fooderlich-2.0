@@ -215,25 +215,6 @@ can use in your code.
 ```
 
 ```
-## Packages
-- [flutter_colorpicker](https://pub.dev/packages/flutter_colorpicker)
-- [intl](https://pub.dev/packages/intl)
-- [provider](https://pub.dev/packages/provider)
-- [uuid](https://pub.dev/packages/uuid)
-- [smooth_page_indicator]()
-- [webview_flutter](https://pub.dev/packages/webview_flutter)
-- [url_launcher](https://pub.dev/packages/url_launcher)
-- [shared_preferences](https://pub.dev/packages/shared_preferences)
-- [cached_network_image](https://pub.dev/packages/cached_network_image)
-- [flutter_slidable](https://pub.dev/packages/flutter_slidable)
-- [flutter_svg](https://pub.dev/packages/flutter_svg)
-- [json_serializable](https://pub.dev/packages/json_serializable)
-- [json_annotation](https://pub.dev/packages/json_annotation)
-- [build_runner](https://pub.dev/packages/build_runner)
-- [http](https://pub.dev/packages/http)
-- [chopper](https://pub.dev/packages/chopper)
-- [logging](https://pub.dev/packages/logging)
-
 # Docs and References
 ### Chapter 3 - Basic widgets
 - [Material design system](https://material.io)
@@ -294,6 +275,26 @@ can use in your code.
 ### Chapter 9 - Shared Preference
 - [Android SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences?hl=en)
 - [iOS  UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults)
+
+## Packages
+- [flutter_colorpicker](https://pub.dev/packages/flutter_colorpicker)
+- [intl](https://pub.dev/packages/intl)
+- [provider](https://pub.dev/packages/provider)
+- [uuid](https://pub.dev/packages/uuid)
+- [smooth_page_indicator]()
+- [webview_flutter](https://pub.dev/packages/webview_flutter)
+- [url_launcher](https://pub.dev/packages/url_launcher)
+- [shared_preferences](https://pub.dev/packages/shared_preferences)
+- [cached_network_image](https://pub.dev/packages/cached_network_image)
+- [flutter_slidable](https://pub.dev/packages/flutter_slidable)
+- [flutter_svg](https://pub.dev/packages/flutter_svg)
+- [json_serializable](https://pub.dev/packages/json_serializable)
+- [json_annotation](https://pub.dev/packages/json_annotation)
+- [build_runner](https://pub.dev/packages/build_runner)
+- [http](https://pub.dev/packages/http)
+- [chopper](https://pub.dev/packages/chopper)
+- [logging](https://pub.dev/packages/logging)
+
 
 ### Other Navigator 2.0 packages
 - https://pub.dev/packages/auto_route
