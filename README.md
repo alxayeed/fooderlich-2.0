@@ -118,6 +118,19 @@ package generate the parsing code for you.
 the parsing code.
 
 ### Chapter 11 - Networking in Flutter
+- The HTTP package is a simple-to-use set of methods for retrieving data from the
+internet.
+- The built-in json.decode transforms JSON strings into a map of objects that you
+can use in your code.
+- FutureBuilder is a widget that retrieves information from a Future.
+- GridView is useful for displaying columns of data.
+
+### Chapter 12 - Using chopper library
+- The Chopper package provides easy ways to retrieve data from the internet.
+- You can add headers to each network request.
+- Interceptors can intercept both requests and responses and change those values.
+- Converters can modify requests and responses.
+- It’s easy to set up global logging.
 
 ## Widgets & Classes
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
@@ -218,6 +231,8 @@ the parsing code.
 - [json_annotation](https://pub.dev/packages/json_annotation)
 - [build_runner](https://pub.dev/packages/build_runner)
 - [http](https://pub.dev/packages/http)
+- [chopper](https://pub.dev/packages/chopper)
+- [logging](https://pub.dev/packages/logging)
 
 # Docs and References
 ### Chapter 3 - Basic widgets
