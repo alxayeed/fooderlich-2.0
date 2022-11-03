@@ -118,6 +118,19 @@ package generate the parsing code for you.
 the parsing code.
 
 ### Chapter 11 - Networking in Flutter
+- The HTTP package is a simple-to-use set of methods for retrieving data from the
+internet.
+- The built-in json.decode transforms JSON strings into a map of objects that you
+can use in your code.
+- FutureBuilder is a widget that retrieves information from a Future.
+- GridView is useful for displaying columns of data.
+
+### Chapter 12 - Using chopper library
+- The Chopper package provides easy ways to retrieve data from the internet.
+- You can add headers to each network request.
+- Interceptors can intercept both requests and responses and change those values.
+- Converters can modify requests and responses.
+- It’s easy to set up global logging.
 
 ## Widgets & Classes
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
@@ -202,23 +215,6 @@ the parsing code.
 ```
 
 ```
-## Packages
-- [flutter_colorpicker](https://pub.dev/packages/flutter_colorpicker)
-- [intl](https://pub.dev/packages/intl)
-- [provider](https://pub.dev/packages/provider)
-- [uuid](https://pub.dev/packages/uuid)
-- [smooth_page_indicator]()
-- [webview_flutter](https://pub.dev/packages/webview_flutter)
-- [url_launcher](https://pub.dev/packages/url_launcher)
-- [shared_preferences](https://pub.dev/packages/shared_preferences)
-- [cached_network_image](https://pub.dev/packages/cached_network_image)
-- [flutter_slidable](https://pub.dev/packages/flutter_slidable)
-- [flutter_svg](https://pub.dev/packages/flutter_svg)
-- [json_serializable](https://pub.dev/packages/json_serializable)
-- [json_annotation](https://pub.dev/packages/json_annotation)
-- [build_runner](https://pub.dev/packages/build_runner)
-- [http](https://pub.dev/packages/http)
-
 # Docs and References
 ### Chapter 3 - Basic widgets
 - [Material design system](https://material.io)
@@ -279,6 +275,26 @@ the parsing code.
 ### Chapter 9 - Shared Preference
 - [Android SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences?hl=en)
 - [iOS  UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults)
+
+## Packages
+- [flutter_colorpicker](https://pub.dev/packages/flutter_colorpicker)
+- [intl](https://pub.dev/packages/intl)
+- [provider](https://pub.dev/packages/provider)
+- [uuid](https://pub.dev/packages/uuid)
+- [smooth_page_indicator]()
+- [webview_flutter](https://pub.dev/packages/webview_flutter)
+- [url_launcher](https://pub.dev/packages/url_launcher)
+- [shared_preferences](https://pub.dev/packages/shared_preferences)
+- [cached_network_image](https://pub.dev/packages/cached_network_image)
+- [flutter_slidable](https://pub.dev/packages/flutter_slidable)
+- [flutter_svg](https://pub.dev/packages/flutter_svg)
+- [json_serializable](https://pub.dev/packages/json_serializable)
+- [json_annotation](https://pub.dev/packages/json_annotation)
+- [build_runner](https://pub.dev/packages/build_runner)
+- [http](https://pub.dev/packages/http)
+- [chopper](https://pub.dev/packages/chopper)
+- [logging](https://pub.dev/packages/logging)
+
 
 ### Other Navigator 2.0 packages
 - https://pub.dev/packages/auto_route
