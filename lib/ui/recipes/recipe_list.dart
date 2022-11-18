@@ -1,14 +1,18 @@
 import 'dart:math';
 import 'package:chopper/chopper.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:provider/provider.dart';
+
 import '../../network/model_response.dart';
 import '../../network/recipe_model.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import '../colors.dart';
 import '../recipe_card.dart';
 import '../widgets/custom_dropdown.dart';
 import 'recipe_details.dart';
 import '../../network/recipe_service.dart';
+import '../../data/models/models.dart';
+import '../../mock_service/mock_service.dart';
 
 class RecipeList extends StatefulWidget {
   const RecipeList({Key? key}) : super(key: key);
@@ -192,7 +196,7 @@ class _RecipeListState extends State<RecipeList> {
       return Container();
     }
     return FutureBuilder<Response<Result<APIRecipeQuery>>>(
-      future: RecipeService.create().queryRecipes(searchTextController.text.trim(), currentStartPosition, currentEndPosition),
+      future: Provider.of<MockService>(context).queryRecipes(searchTextController.text.trim(), currentStartPosition, currentEndPosition),
       builder: (context, snapshot){
         if (snapshot.connectionState == ConnectionState.done){
           if (snapshot.hasError){
@@ -257,7 +261,16 @@ class _RecipeListState extends State<RecipeList> {
       onTap: () {
         Navigator.push(topLevelContext, MaterialPageRoute(
           builder: (context) {
-            return const RecipeDetails();
+            final detailRecipe = Recipe(
+                label: recipe.label,
+                image:recipe.image,
+                url:recipe.url,
+                calories: recipe.calories,
+                totalWeight: recipe.totalWeight,
+                totalTime: recipe.totalTime);
+
+            detailRecipe.ingredients = convertIngredients(recipe.ingredients);
+            return RecipeDetails(recipe: detailRecipe);
           },
         ));
       },
