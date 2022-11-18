@@ -13,13 +13,13 @@ class Recipe extends Equatable {
   final double? totalTime;
 
   Recipe(
-    this.id,
+  {this.id,
     this.label,
     this.image,
     this.url,
     this.calories,
     this.totalWeight,
-    this.totalTime,
+    this.totalTime,}
   );
 
   @override
