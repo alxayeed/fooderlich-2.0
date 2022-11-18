@@ -132,6 +132,16 @@ can use in your code.
 - Converters can modify requests and responses.
 - It’s easy to set up global logging.
 
+### Chapter 13 - State management(Provider)
+- State management is key to Flutter development.
+- Provider is a great package that helps with state management.
+- Other packages for handling application state include Redux, Bloc, MobX and
+Riverpod.
+- Repositories are a pattern for providing data.
+- By providing an Interface for the repository, you can switch between different
+repositories. For example, you can switch between real and mocked repositories.
+- Mock services are a way to provide dummy data.
+
 ## Widgets & Classes
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
 - [AssetImage](https://api.flutter.dev/flutter/painting/AssetImage-class.html)
@@ -276,6 +286,14 @@ can use in your code.
 - [Android SharedPreferences](https://developer.android.com/reference/kotlin/android/content/SharedPreferences?hl=en)
 - [iOS  UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults)
 
+### Chapter 13 - State management(Provider)
+- [State management](https://flutter.dev/docs/development/data-and-backend/state-mgmt/intro)
+- [Clean Architecture](https://pusher.com/tutorials/clean-architecture-introduction)
+- [Redux](https://pub.dev/packages/flutter_redux)
+- [Bloc](https://bloclibrary.dev/#/)
+- [MobX](https://github.com/mobxjs/mobx.dart)
+- [Riverpod](https://riverpod.dev/)
+
 ## Packages
 - [flutter_colorpicker](https://pub.dev/packages/flutter_colorpicker)
 - [intl](https://pub.dev/packages/intl)
@@ -294,10 +312,13 @@ can use in your code.
 - [http](https://pub.dev/packages/http)
 - [chopper](https://pub.dev/packages/chopper)
 - [logging](https://pub.dev/packages/logging)
+- [provider](https://pub.dev/packages/provider)
+- [equatable](https://pub.dev/packages/equatable)
 
 
 ### Other Navigator 2.0 packages
 - https://pub.dev/packages/auto_route
 - https://pub.dev/packages/fluro
 - https://pub.dev/packages/beamer
+
 
