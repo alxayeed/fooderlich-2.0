@@ -6,10 +6,14 @@
 
 <table>
   <tr>
-    <td>Recipe from model json</td>
+    <td>Recipe from api</td>
+    <td>Bookmarked recipes</td>
+    <td>Ingredients list</td>
   </tr>
   <tr>
-    <td><img src="ss/10_00.png" width="100%" height="70%" /></td>
+    <td><img src="ss/14_00.png" width="100%" height="70%" /></td>
+    <td><img src="ss/14_01.png" width="100%" height="70%" /></td>
+    <td><img src="ss/14_02.png" width="100%" height="70%" /></td>
   </tr>
  </table>
 <br/>
@@ -141,6 +145,12 @@ Riverpod.
 - By providing an Interface for the repository, you can switch between different
 repositories. For example, you can switch between real and mocked repositories.
 - Mock services are a way to provide dummy data.
+
+### Chapter 14 - Streams
+- Streams are a way to asynchronously send data to other parts of the app.
+- We usually create streams by using StreamController.
+- Use StreamBuilder to add a stream to our UI.
+- Abstract classes, or interfaces, are a great way to abstract functionality.
 
 ## Widgets & Classes
 - [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
@@ -292,7 +302,10 @@ repositories. For example, you can switch between real and mocked repositories.
 - [Redux](https://pub.dev/packages/flutter_redux)
 - [Bloc](https://bloclibrary.dev/#/)
 - [MobX](https://github.com/mobxjs/mobx.dart)
-- [Riverpod](https://riverpod.dev/)
+- [Riverpod](https://riverpod.dev/) 
+
+### Chapter 14 - Streams
+- [Streams](https://dart.dev/tutorials/language/streams)
 
 ## Packages
 - [flutter_colorpicker](https://pub.dev/packages/flutter_colorpicker)
